@@ -64,7 +64,7 @@ A hotel booking application in React. Homework for the [CodeYourFuture React mod
 
 **Instructions:** Instead of using your hard-coded data in the `<SearchResults />` component, load data from the `src/data/fakeBookings.json` file in the `<Bookings />` component and pass it as a prop to `<SearchResults />`. All the bookings in `src/data/fakeBookings.json` should now be displayed in your table.
 
-**Hint:** Look in the `<Bookings />` component for how to import data from a JSON file.
+**Hint:** Look in the `<Bookings />` component for how to import data from a JSON file and by assigning data to a component as props you are adding properties to it and you can access it as such
 
 **Test:** All the bookings in the file `src/data/fakeBookings.json` should be displayed in your table.
 
