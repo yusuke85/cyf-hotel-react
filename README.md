@@ -64,7 +64,7 @@ A hotel booking application in React. Homework for the [CodeYourFuture React mod
 
 **Instructions:** Instead of using your hard-coded data in the `<SearchResults />` component, load data from the `src/data/fakeBookings.json` file in the `<Bookings />` component and pass it as a prop to `<SearchResults />`. All the bookings in `src/data/fakeBookings.json` should now be displayed in your table.
 
-**Hint:** Look in the `<Bookings />` component for how to import data from a JSON file and by assigning data to a component as props you are adding properties to it and you can access it as such
+**Hint:** Look in the `<Bookings />` component for how to import data from a JSON file and by assigning data to a component as `props` you are adding properties to it and you can access it as such
 
 **Test:** All the bookings in the file `src/data/fakeBookings.json` should be displayed in your table.
 
@@ -72,7 +72,7 @@ A hotel booking application in React. Homework for the [CodeYourFuture React mod
 
 **Instructions:** Add another column to your `<SearchResults />` table which shows the number of nights a guest is staying.
 
-**Hint:** Try installing the [moment.js library](http://momentjs.com/) (you'll need to install it with `npm install moment --save`) and using the [`.diff()` method](http://momentjs.com/docs/#/displaying/difference/) to compare dates.
+**Hint:** Try installing the [moment.js library](http://momentjs.com/) (you'll need to install it with `npm install moment --save`) and using the [`.diff()` method](http://momentjs.com/docs/#/displaying/difference/) to compare dates, you may need to declare variables for the dates and declare the "unit of measurement" without leaving spaces in the ""
 
 **Test:** Each booking in your table should show the number of nights in a separate column. For example, Mr John Doe has a booking for **2** nights.
 
@@ -88,7 +88,7 @@ A hotel booking application in React. Homework for the [CodeYourFuture React mod
 
 **Instructions:** At the moment, the number of pizzas a guest can order is static and set to 0, even if they click on the 'Add' button. We will change that in the following to let a guest add more pizzas to their order. First, declare a new state variable `orders` along with the function to set the orders state `setOrders`. The initial value of the `orders` state should be **0**. Use the new `orders` variable instead of the `pizzas` variable (that you can now delete).
 
-**Hint:** You need to use the React function `useState` to create a state variable. Remember to import the function at the top with `import React, {useState} from "react";`.
+**Hint:** You need to use the React function `useState` to create a state variable. Remember to import the function at the top with `import React, {useState} from "react";` also remember to use the rules of destructuring.
 
 **Test:** Verify the number of ordered pizzas it still **0** on the screen.
 
@@ -96,11 +96,13 @@ A hotel booking application in React. Homework for the [CodeYourFuture React mod
 
 **Instructions:** In the `<Restaurant />` component, create a new function named `orderOne`. The `orderOne` function doesn't take any parameters and should use the `setOrders` function to increment the `orders` state variable by 1. Then, add a `onClick` handler to the Add `<button>` that calls the `orderOne` function when it's being clicked.
 
-**Test:** Try to click on the Add button a few times and verify that the number of pizzas increases accordingly.
+**Test:** Try to click on the Add button a few times and verify that the number of pizzas increases accordingly, also in the orderOne function we need both elements of the usestate.
 
 #### 11. Extract the Add button to its own component
 
 **Instructions:** Extract the `<button>` currently in the `<Restaurant />` component to a new component named `RestaurantButton`. Pass the `orderOne` function as a prop to the `<RestaurantButton />` component and use this prop in the `onClick` handler.
+
+**Tips** Functions can be saved as a props by giving it a name and then used as property of PROPS.
 
 **Test:** Clicking the button should still increment the number of pizzas.
 
@@ -108,19 +110,19 @@ A hotel booking application in React. Homework for the [CodeYourFuture React mod
 
 **Instructions:** Extract the `<li>` containing "Pizzas" from the `<Restaurant />` component to a new component named `Order`. Also, move the declaration of the `orders` state and the `orderOne` function from the `<Restaurant />` component to the new `<Order />` component. Use the `<Order />` component in the `<ul>` list of the `<Restaurant />` component.
 
-**Test:** Make sure the pizza order is still rendered on the page and that clicking on the "Add" button still increments the number of orders.
+**Test:** Make sure the pizza order is still rendered on the page and that clicking on the "Add" button still increments the number of orders, we extract a part of the page/front by defining it as a new.
 
 #### 13. Render more orders
 
 **Instructions:** Pass a new prop named `orderType` to the `<Order />` component with the value "Pizzas". Then render the `orderType` prop instead of "Pizzas" in the `<Order />` component. Make sure that "Pizzas" is still displayed on the screen. In the `<ul>` list of the `<Restaurant />` component, render 2 others `<Order />` components but this time pass different values for the `orderType` prop: "Salads" and "Chocolate cake".
 
-**Test:** For each order, the number of items can be incremented independently. Verify that you are able to explain what is happening.
+**Test:** For each order, the number of items can be incremented independently. Verify that you are able to explain what is happening also props can contain strings and the way to use them is the same.
 
 #### 14. Passing bookings from a state variable
 
 **Instructions:** In the `<Bookings />` component, declare a new state `bookings` with the corresponding setter function `setBookings` to hold the `FakeBookings` data. Instead of passing `FakeBookings` directly to the `<SearchResults />` component, pass the new `bookings` state variable.
 
-**Hint:** The new `bookings` state should be initialised with the `FakeBookings` variable.
+**Hint:** The new `bookings` state should be initialised with the `FakeBookings`, remember that an useState can contain an imported file.
 
 **Test:** Check that the bookings are still rendered correctly in the page.
 
@@ -128,7 +130,7 @@ A hotel booking application in React. Homework for the [CodeYourFuture React mod
 
 **Instructions:** Within the `<SearchResults />` component or its child components, add an `onClick` handler to each row in the table (hint: on the `<tr>` element). When clicked, the row is "selected" and highlighted with a different colour. When clicked again, the row is unselected and the coloured highlighting is removed.
 
-**Hint:** Use a new state variable for each row to record if the row is selected or not, and use this value to set a class to the `className` prop of the row.
+**Hint:** Use a new state variable for each row to record if the row is selected or not, and use this value to set a class to the `className` prop of the row, the className value can contain an usestate and change its value depending on it
 
 **Test:** Verify that each row of your table can be highlighted (on and off) independently when being clicked.
 
