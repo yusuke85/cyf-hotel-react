@@ -152,7 +152,7 @@ A hotel booking application in React. Homework for the [CodeYourFuture React mod
 
 **Instructions:** In the following, we will implement the functionality to search for a customer name given the text typed into the customer name field. In the `src/Search.js` file, declare a new state variable named `searchInput` with the corresponding setter function `setSearchInput` (hint: use the React function `useState`). The initial value of the `searchInput` variable can be an empty string - `("")`. Add a `value` property to the `<input>` tag, that is set to the new `searchInput` state variable. Create a new function `handleSearchInput` taking an `event` parameter. This function should use the `setSearchInput` function to update the state variable `searchInput` with what the user typed in the input field. Finally, add a `onChange` prop to the `<input>` tag that is set to the function `handleSearchInput`. Use `console.log()` to output the value received in the `handleSearchInput` function.
 
-**Hint:** Use `event.target.value` to get the input value, read more about - reacting on changes:` https://syllabus.migracode.org/course-content/react/week-2` to use it within <input> tag.
+**Hint:** Use `event.target.value` to get the input value. Read more about - reacting on changes:` https://syllabus.migracode.org/course-content/react/week-2` to use it within `<input>` tag.
 
 **Test:** In the developer console, check that everything you type in the search input is printed successively for each new character you enter.
 
@@ -212,7 +212,7 @@ Try looking at your Pokemon app that you worked on in class for an example.
 
 **Instructions:** Add a form with `<input>`s for each of the booking fields (first name, surname, title, room id, check in date, check out date) to the bottom of the page. Submitting the form adds the booking to the result table. Note that the new booking won't persist if you refresh the page.
 
-**Hint:** Add `onSubmit` method to the form, and `onChange` method to each <input>. Use `value` for each row to add inserted data. Create a function that will collect the data and send it to the table as props and use it inside the `onSubmit` method.
+**Hint:** Add `onSubmit` method to the form, and `onChange` method to each `<input>`. Use `value` for each row to add inserted data. Create a function that will collect the data and send it to the table as props and use it inside the `onSubmit` method.
 
 **Test:** When adding a new booking in the form, it should be displayed in the table.
 
