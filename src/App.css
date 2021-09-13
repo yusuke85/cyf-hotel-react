@@ -1,5 +1,5 @@
 .App {
-  text-align: left;
+  text-align: center;
 }
 
 .App-logo {
@@ -53,5 +53,11 @@ tr {
 }
 
 .card {
-  width: 18rem;
+  width: 20rem;
+  display: inline-flex;
+  margin: 30px 10px 0 10px;
+}
+
+.list {
+  list-style-type: none;
 }
