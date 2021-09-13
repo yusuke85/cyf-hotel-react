@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -35,6 +35,7 @@
     transform: rotate(360deg);
   }
 }
+
 .search {
   padding: 5px 0 20px 0;
 }
@@ -49,15 +50,16 @@ tr {
 
 .footer {
   padding-top: 20px;
-  text-align: center;
 }
 
 .card {
   width: 20rem;
+  text-align: center;
   display: inline-flex;
-  margin: 30px 10px 0 10px;
+  margin: 30px 0 0 120px;
 }
 
 .list {
   list-style-type: none;
+  text-align: center;
 }
