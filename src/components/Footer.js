@@ -6,13 +6,13 @@ const Footer = props => {
     "hello@fakehotel.com",
     "0123 456789"
   ];
-  const { item } = props;
 
+  const { item } = props;
   return (
     <div>
       <ul className="list">
-        {myFooter.map((ability, i) => (
-          <li key={i}>{ability}</li>
+        {myFooter.map((ability, item) => (
+          <li key={item}>{ability}</li>
         ))}
       </ul>
     </div>

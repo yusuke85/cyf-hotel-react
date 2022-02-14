@@ -7,6 +7,7 @@ const Restaurant = () => {
       <h3 className="d-flex justify-content-center">Restaurant Orders</h3>
       <ul>
         <Order orderType="Pizzas" />
+        <Order orderType="Humberger" />
         <Order orderType="Salads" />
         <Order orderType="Chocolate cake" />
       </ul>

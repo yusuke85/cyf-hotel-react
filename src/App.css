@@ -63,3 +63,14 @@ tr {
   list-style-type: none;
   text-align: center;
 }
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+h3 {
+  margin-top: 50px;
+}

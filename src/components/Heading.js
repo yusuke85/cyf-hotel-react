@@ -22,12 +22,12 @@ const Heading = () => (
   <div>
     <header className="App-header">
       <span>CYF Hotel</span>
-      <img
+      {/* <img
         className="App-logo"
-        src="https://image.flaticon.com/icons/svg/139/139899.svg"
+        src="file:///Users/yusukefujita/Desktop/Yusuke-Artwork/Studio_Yusuke/jazzmen_summer.jpg"
         alt="logo svg"
         style={styles}
-      />
+      /> */}
     </header>
   </div>
 );

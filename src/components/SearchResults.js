@@ -8,7 +8,7 @@ const SearchResults = ({ bookings, changeProfile }) => {
   return (
     <>
       <table className="table">
-        <thead>
+        {/* <thead>
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Title</th>
@@ -21,20 +21,21 @@ const SearchResults = ({ bookings, changeProfile }) => {
             <th scope="col">Nights</th>
             <th scope="col">Show Profile</th>
           </tr>
-        </thead>
+        </thead> */}
 
         <tbody>
-          {bookings.map((item, index) => {
-            return (
-              <>
-                <SearchResultsRow
-                  index={index}
-                  item={item}
-                  changeProfile={changeProfile}
-                />
-              </>
-            );
-          })}
+          {bookings &&
+            bookings.map((item, index) => {
+              return (
+                <>
+                  <SearchResultsRow
+                    index={index}
+                    item={item}
+                    changeProfile={changeProfile}
+                  />
+                </>
+              );
+            })}
         </tbody>
       </table>
     </>
